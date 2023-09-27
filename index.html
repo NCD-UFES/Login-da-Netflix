@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Informações gerais sobre o documento -->
+<head>
+  <!-- Metadados -->
+  <meta charset="UTF-8">
+
+  <!-- Garante que o documento seja renderizado corretamente no Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Define a escala inicial para dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Importa o arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Define o título da página exibido na barra de título do navegador ou na aba -->
+  <title>Netflix</title>
+</head>
+
+<!-- Corpo do documento -->
+<body>
+  <!-- Cabeçalho da página com o logotipo Netflix -->
+  <div class="cabecalho"> 
+    <div class="logo">
+      <a href="#">
+        <img src="img/logonetflix.png" alt="Logotipo Netflix">
+      </a>
+    </div>
+  </div>
+  <!-- Fim do cabeçalho da página -->
+
+  <!-- Área de login -->
+  <div class="envelope-login">
+
+    <!-- Caixa de informações de login -->
+    <div class="caixa-login">
+      <h2>Entrar</h2>
+
+      <!-- Formulário de login com campos: email/senha e botão de entrada -->
+      <form>
+
+        <!-- Campo de entrada para email/telefone com preenchimento obrigatório -->
+        <div class="caixa-entrada">
+          <input required type="email" placeholder="Email ou número de telefone">
+        </div>
+
+        <!-- Campo de entrada para senha com preenchimento obrigatório -->
+        <div class="caixa-entrada">
+          <input required type="password" placeholder="Senha">
+        </div>
+
+        <!-- Botão de entrada -->
+        <div>
+          <button class="botao-entrar">
+            Entrar
+          </button>
+        </div>
+
+      </form> <!-- Fim do formulário de login -->
+      
+
+      <!-- Seção de suporte -->
+      <div class="suporte">
+
+        <!-- Caixa de seleção com texto "Lembre-se de mim" -->
+        <div class="lembre"> 
+          <span>
+            <input type="checkbox" style="margin: 0; padding: 0; height: 13px;"> <!-- Caixa de seleção -->
+          </span>
+          <span>Lembre-se de mim</span>
+        </div>
+        
+        <!-- Link de ajuda -->
+        <div class="ajuda">
+          <a href="#"> <!-- Tag de link para a página de ajuda, porém ainda sem link -->
+            Precisa de ajuda?
+          </a>
+        </div>
+
+      </div> <!-- Fim da seção de suporte -->
+
+
+      <!-- Rodapé da seção de login com link para assinar o serviço-->
+      <div class="rodape-login">
+        <div class="assine">
+          <p>Novo por aqui? <a href="#">Assine agora.</a></p> <!-- Texto com link para a página de assinatura -->
+        </div>
+      </div> <!-- Fim do rodapé da seção de login -->
+        
+    </div> <!-- Fim da caixa de informações de login -->
+  </div> <!-- Fim da área de login -->
+</body> <!-- Fecha do corpo do documento -->
+</html> <!-- Fecha o documento -->

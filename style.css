@@ -1,0 +1,142 @@
+body { /*corpo do html*/
+    padding: 0;
+    margin: 0;
+    height: 100vh; /*se adequa ao tamanho maximo da tela*/
+    width: 100%; /*largura*/
+    position: relative;
+    background-image: url(img/fundo.jpg); 
+    background-size: cover;/*preencher fundo com imagem*/
+    background-repeat: no-repeat; /*nao duplicar imagem*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before { /*efeito de vidro*/
+    content: '';
+    background-color: rgb(0, 0, 0, .5); /*rgb(red, green, blue, opacidade).*/ 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.cabecalho { 
+    padding: 20px 50px;
+    position: relative;
+    z-index: 10; /*sobreposiçao*/
+}
+
+.logo img { /*fazendo logo netflix ficar menor*/
+    height: 45px;
+    width: 167px;
+}
+
+.envelope-login {  /*toda a caixinha do login*/
+    margin-top:75px; 
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 550px;
+    margin-left: 50%;
+    background-color: rgb(0, 0, 0, 0.75);/*rgb(red, green, blue, opacidade).*/
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+}
+
+.caixa-entrada { /* envelope das caixas de email e senha */
+    margin-bottom: 25px;
+}
+
+.envelope-login h2 { /* "entrar" */
+    font-size: 32px;
+    color: #fff; /*Uma cor hexadecimal é especificada com: #RRGGBB.
+RR (vermelho), GG (verde) e BB (azul) são inteiros hexadecimais entre 00 e FF especificando a intensidade da cor.*/
+    margin-top: 0;
+}
+
+.envelope-login input { /* caixas de email e senha */
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none; 
+}
+
+.envelope-login input:hover { /* hover -> quando cursor do mouse passar */
+    background-color: #444;
+}
+
+.envelope-login button { /* botão de entrar */
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.envelope-login button:hover { 
+    background-color: #fc1722;
+    cursor: pointer;/*maozinha*/
+}
+
+.suporte { /* "lembre-se de mim" "precisa de ajuda?" */
+    display: flex;
+    color: #b3b3b3;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.suporte input { /* "checkbox" */
+    width: 15px; /*largura*/
+    height: 15px;
+}
+
+.lembre { /* "lembre-se de mim" */
+    display: flex;
+    align-items: center;
+}
+
+.lembre span { /* texto generico */
+    margin-right: 5px;
+    height: 25px;
+}
+
+
+.ajuda a { /* link "precisa de ajuda?" */
+    text-decoration: none; /*sem sublinhado*/
+    color: #737373;
+}
+
+.rodape-login /*div que guarda "assine agora"*/
+{
+  margin-top: 65px; 
+}
+
+.assine { /* "Novo por aqui? Assine agora" */
+    color: #737373;
+    font-size: 16px;
+}
+
+.assine a { /*link*/
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none; /*sem sublinhado*/
+}
+
+.assine a:hover /*sublinha link da div assine quando passar o mouse*/
+{
+    text-decoration: underline; 
+}
